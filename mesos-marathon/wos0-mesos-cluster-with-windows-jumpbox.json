@@ -911,7 +911,7 @@
       },
       "dependsOn": [
         "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountPrefixes')[mod(div(copyIndex(),variables('vmsPerStorageAccount')),variables('storageAccountPrefixesCount'))],variables('storageAccountPrefixes')[div(div(copyIndex(),variables('vmsPerStorageAccount')),variables('storageAccountPrefixesCount'))],variables('storageAccountBaseName'),add(1,div(copyIndex(),variables('vmsPerStorageAccount'))))]",
-        "[concat('Microsoft.Network/networkInterfaces/', variables('agentVMNamePrefix'), 'nic-', copyIndex())]",
+        "[concat('Microsoft.Network/networkInterfaces/', variables('agentVMNamePrefix'), 'nic-', copyIndex())]"
 
       ],
       "properties": {
