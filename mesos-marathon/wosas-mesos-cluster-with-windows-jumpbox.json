@@ -286,7 +286,7 @@
             "z"
         ],
         "storageAccountPrefixesCount": "[length(variables('storageAccountPrefixes'))]",
-        "storageAccountBaseName": "[concat(uniqueString(variables('masterEndpointDNSNamePrefix')), variables('orchestratorName'))]",
+        "storageAccountBaseName": "[concat(variables('masterEndpointDNSNamePrefix'), variables('orchestratorName'))]",
         "masterStorageAccountName": "[concat(variables('storageAccountBaseName'), '0')]",
         "omsStorageAccount": "none",
         "omsStorageAccountKey": "none",
