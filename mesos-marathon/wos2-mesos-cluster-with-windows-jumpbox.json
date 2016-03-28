@@ -930,11 +930,8 @@
         },
         "masterFQDN": {
             "type": "string",
-            "value": "[reference(concat('Microsoft.Network/publicIPAddresses/', variables('masterPublicIPAddressName'), copyIndex())).dnsSettings.fqdn]",
-            "copy": {
-                "name": "mFQDNLoopNode",
-                "count": "[variables('masterCount')]"
-            }
+            "value": "[reference(concat('Microsoft.Network/publicIPAddresses/', variables('masterPublicIPAddressName'))).dnsSettings.fqdn]",
+            
 
         }
     }
