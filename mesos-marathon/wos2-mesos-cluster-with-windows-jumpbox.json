@@ -932,9 +932,10 @@
             "type": "string",
             "value": "[reference(concat('Microsoft.Network/publicIPAddresses/', variables('masterPublicIPAddressName'), copyIndex())).dnsSettings.fqdn]",
             "copy": {
-            "name": "mFQDNLoopNode",
-            "count": "[variables('masterCount')]"
-        }
+                "name": "mFQDNLoopNode",
+                "count": "[variables('masterCount')]"
+            }
 
+        }
     }
 }
